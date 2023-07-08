@@ -3,13 +3,9 @@ const path = require('path');
 const {planetsRouter} = require('./src/routes/planets/planets.router')
 const {launchesRouter} = require('./src/routes/launches/launches.router')
 const morgan = require('morgan')
-const cors = require('cors');
 const app = express();
 
 
-app.use(cors({
-    origin: 'http://localhost:3000'
-}));
 
 //careful of spaces in the build public files
 
